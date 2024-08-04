@@ -81,7 +81,7 @@ def main():
 
     video = ffmpeg_streaming.input(args.input)
 
-    dash = video.dash(Formats.h264())
+    dash = video.dash(Formats.h264()) # this is update part
     dash.auto_generate_representations()
 
     if args.hls_output:
