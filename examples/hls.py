@@ -90,6 +90,7 @@ def main():
 
     video = ffmpeg_streaming.input(args.input)
 
+    # hls = video.hls(Formats.h264()) 
     hls = video.hls(Formats.h264())
     hls.auto_generate_representations()
 
